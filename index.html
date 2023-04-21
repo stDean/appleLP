@@ -6,11 +6,78 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>apple</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h2>This is America</h2>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <!-- Desktop Nav -->
+        <ul class="nav-list nav-list-large">
+          <li class="nav-item nav-item-hidden">
+            <a href="index.html" class="nav-link nav-link-apple"></a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">Mac</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">iPad</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">iPhone</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">iWatch</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">Apple TV</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">Music</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Support</a>
+          </li>
+          <li class="nav-item">
+            <a href="$" class="nav-link nav-link-search"></a>
+          </li>
+          <li class="nav-item nav-item-hidden">
+            <a href="$" class="nav-link nav-link-bag"></a>
+          </li>
+        </ul>
+
+        <!-- Mobile Nav -->
+        <ul class="nav-list nav-list-mobile">
+          <li class="nav-item">
+            <!-- Hamburger menu -->
+            <div class="mobile-menu">
+              <span class="line line-top"></span>
+              <span class="line line-bottom"></span>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link nav-link-apple"></a>
+          </li>
+          <li class="nav-item">
+            <a href="$" class="nav-link nav-link-bag"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    // Add the active class to the header elements when the hamburger menu is clicked
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const header = document.querySelector("header");
+
+    mobileMenu.addEventListener('click', () => {
+      header.classList.toggle('active');
+    });
+  </script>
 
 </body>
 

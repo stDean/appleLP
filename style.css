@@ -77,12 +77,107 @@ header {
   display: none;
 }
 
-/* END */
+/* Header END */
+
+/* Top section style */
+
+.iphone-11-pro {
+  background: url('./assets/hero/iphone-11-pro/iphone_11_pro_large.jpg');
+  margin-top: 4.4rem;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+
+.title-heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -.005rem;
+}
+
+.title-sub-heading {
+  font-size: 2.65rem;
+  margin-top: 1.6rem;
+  letter-spacing: 0.008rem;
+  font-weight: 400;
+}
+
+.title-price {
+  font-size: 1.7rem;
+  color: #888;
+  margin-top: .68rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.cta-link {
+  color: #68bbff;
+  font-size: 2.1rem;
+  display: inline-block;
+}
+
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+.cta-link:hover {
+  border-bottom: 2px solid #68bbff;
+}
+
+/* End Top section style */
+
+/* keep at the bottom */
+
+.hero {
+  height: 69.2rem;
+  background-size: auto 73.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: .6rem solid white;
+  border-bottom: .6rem solid white;
+}
+
+/* End */
+
+/* Media Queries */
+
+/* Screen biggest width === 1068 i.e between 768 and 1068 */
+@media screen and (max-width: 1068px) {
+  .iphone-11-pro {
+    background: url('./assets/hero/iphone-11-pro/iphone_11_pro_medium.jpg');
+  }
+
+  .hero {
+    height: 65rem;
+    background-size: auto 69.8rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title-heading {
+    font-size: 4.4rem;
+  }
+
+  .title-sub-heading {
+    font-size: 2.2rem;
+  }
+
+  .cta-link:nth-child(2) {
+    margin-left: 2rem;
+  }
+}
 
 /* @ screen max width 767 i.e between 736 and 767 */
-/* Show mobile nav */
 
 @media screen and (max-width: 767px) {
+
+  /* Show mobile nav */
   header {
     height: 4.8rem;
     transition: background 1s cubic-bezier(0.32, 0.08, 0.24, 1),
@@ -232,4 +327,52 @@ header {
       opacity: 1;
     }
   }
+
+  /* End Mobile Nav */
+
+  /* Section 11 pro */
+  .iphone-11-pro {
+    background: url('./assets/hero/iphone-11-pro/iphone_11_pro_small.jpg');
+  }
 }
+
+/* screens from o to 735 */
+@media screen and (max-width: 735px) {
+  .hero {
+    height: 50rem;
+    background-size: auto 54.8rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    padding-top: 3.7rem;
+  }
+
+  .title-heading {
+    font-size: 3.2rem;
+  }
+
+  .title-sub-heading {
+    font-size: 1.9rem;
+  }
+
+  .title-watch {
+    margin-top: -.5rem;
+    margin-bottom: 0;
+  }
+
+  .title-price {
+    font-size: 1.4rem;
+  }
+
+  .cta {
+    margin-top: .7rem;
+  }
+
+  .cta-link {
+    font-size: 1.9rem;
+  }
+}
+
+/* End */
